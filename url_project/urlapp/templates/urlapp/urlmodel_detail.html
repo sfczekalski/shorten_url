@@ -1,0 +1,9 @@
+{% extends "urlapp/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <p>Provided long url: {{ object.l_url }}</p>
+        <p>Got id: {{ object.url_id }}</p>
+        <p>Shortened url: {{ object.s_url }}</p>
+    </div>
+{% endblock content %}
